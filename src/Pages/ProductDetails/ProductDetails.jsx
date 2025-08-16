@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { ShopContext } from '../../Components/ShopContext/ShopContext'; 
 import './ProductDetails.css'
 
 import { productsData } from '../../assets/data'
@@ -9,7 +10,13 @@ const ProductDetails = () => {
   const product = productsData.find(product => {
     return product.id === parseInt(id)
   })
-  
+ const { addToCart } = useContext(ShopContext);
+
+  const handleAddToCart = () => {
+    if (product) {
+      addToCart(product);
+    }
+  };
   return (
     <div>
       <div className="product-details">
@@ -20,7 +27,7 @@ const ProductDetails = () => {
           <h3>{product.title}</h3>
           <p className='product_price'>${product.price}</p>
           <p className='desc'>{product.description}</p>
-          <button>ADD TO CART</button>
+          <button onClick={() => addToCart(product)}>ADD TO CART</button>
         </div>
       </div>
     </div>

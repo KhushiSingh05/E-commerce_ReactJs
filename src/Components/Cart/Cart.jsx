@@ -3,11 +3,17 @@ import {ShopContext} from "../ShopContext/ShopContext";
 import { FiTrash2 } from 'react-icons/fi'
 import CartDetails from './CartDetails'
 import './Cart.css'
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
 
   const {cart, total, quantity, clearCart} = useContext(ShopContext)
+   const navigate = useNavigate();
 
+  // Checkout always goes to login page
+  const handleCheckout = () => {
+    navigate("/MyAccount");
+  }
   return (
     <div>
      <div className="cart_container">
@@ -57,7 +63,7 @@ const Cart = () => {
             <span>Total Cost</span>
             <span>${isNaN(total) ? 0: total }</span>
           </div>
-          <button className='checkout'>CHECKOUT</button>
+          <button className='checkout' onClick={handleCheckout}>CHECKOUT</button>
 
 
         </div>

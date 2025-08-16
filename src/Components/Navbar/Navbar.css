@@ -3,6 +3,8 @@
     padding-inline: 80px;
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem 5vw;
+    font-size: 1.2rem;
 }
 .navbar .link ul{
     display: flex;

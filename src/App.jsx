@@ -8,10 +8,10 @@ import Contact from './Pages/Contact/Contact'
 import AppPage from './Pages/AppPage/AppPage'
 import Products from './Pages/Products/Products'
 import MyAccount from './Pages/MyAccount/MyAccount'
+import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css";
-
 
 
 const App = () => {

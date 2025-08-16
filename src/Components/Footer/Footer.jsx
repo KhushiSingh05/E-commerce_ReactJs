@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer_content">
           <div className="footer_name">
-            <h2>OhKelly</h2>
+            <h2>MyShop</h2>
           </div>
           <div className="socials">
             <FaFacebook className='icon-footer'/>
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="copy">
-          <p>Copyright (c) OhKelly 2024. All rights reserved</p>
+          <p>Copyright (c) MyShop 2024. All rights reserved</p>
         </div>
       </div>
     </div>

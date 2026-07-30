@@ -78,25 +78,21 @@ import 'react-toastify/dist/ReactToastify.css';
   }
 
   const decreaseQuantity = (id) => {
-  const cartItem = cart.find((item) => {
-    return item.id === id;
-  })
-  if (cartItem) {
-    const newCart = cart.map((item) => {
-      if(item.id === id){
-        return{...item, amount:cartItem.amount-1}
-      }else{
-        return item
-      }
-    })
-    setCart(newCart)
-  }
-  else{ 
-    if(cartItem.amount < 1) {
+  const item = cart.find((item) => item.id === id);
+
+  if (item.amount === 1) {
     removeFromCart(id);
-    } 
+    return;
   }
-  }
+
+  const newCart = cart.map((item) =>
+    item.id === id
+      ? { ...item, amount: item.amount - 1 }
+      : item
+  );
+
+  setCart(newCart);
+};
 
   return (
     <ShopContext.Provider

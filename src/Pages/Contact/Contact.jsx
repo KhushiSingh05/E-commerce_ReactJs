@@ -1,10 +1,20 @@
 import React from "react";
 import "./Contact.css";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaClock } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <div className="contact-container">
       {/* Contact Info + Map */}
+      <div className="contact-hero">
+  <div className="contact-hero-content">
+    <h1>Contact Us</h1>
+    <p>
+      We'd love to hear from you. Whether you have a question about our
+      products, orders, or anything else, our team is always ready to help.
+    </p>
+  </div>
+</div>
       <div className="contact-top">
         <div className="contact-info">
           <h5 className="contact-subtitle">GET IN TOUCH</h5>
@@ -13,10 +23,13 @@ const Contact = () => {
           </h2>
           <h4>Head office</h4>
 
-          <p>📍 56 Glassford Street, Glasgow G1 1UL, New York</p>
-          <p>✉ contact@example.com</p>
-          <p>📞 +1 234 567 890</p>
-          <p>⏰ Monday to Saturday: 09:00 a.m to 06:00 p.m</p>
+          <p><FaMapMarkerAlt className="contact-icon" /> 56 Glassford Street, Glasgow G1 1UL, New York</p>
+
+          <p><FaEnvelope className="contact-icon" /> contact@example.com</p>
+
+          <p><FaPhoneAlt className="contact-icon" /> +1 234 567 890</p>
+
+          <p><FaClock className="contact-icon" /> Monday to Saturday: 09:00 a.m – 06:00 p.m</p>
         </div>
 
         <div className="contact-map">
@@ -43,7 +56,7 @@ const Contact = () => {
           <input type="text" placeholder="Subject" />
           <textarea placeholder="Your Message"></textarea>
           <button type="button" className="submit-btn">
-            Submit
+            Send Message →
           </button>
         </form>
       </div>

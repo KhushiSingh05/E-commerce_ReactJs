@@ -1,30 +1,78 @@
-.products-container {
-  padding: 20px;
+.productsHero{
+    height:420px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:60px;
 }
 
-.products-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+.heroContent{
+    color:white;
+    text-align:center;
 }
 
-.product-card {
-  border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 8px;
-  width: 200px;
-  text-align: center;
+.heroContent h1{
+    font-size:60px;
+    margin-bottom:20px;
 }
 
-.product-card img {
-  width: 100%;
+.heroContent p{
+    font-size:20px;
+    width:650px;
+    max-width:90%;
+    margin:auto;
+    line-height:1.7;
 }
 
-.product-card button {
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.shopNowBtn:hover{
+    background:black;
+    transform:translateY(-3px);
+}
+.featuredHeading{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.featuredHeading h2{
+    font-size:42px;
+    color:#222;
+}
+
+.featuredHeading p{
+    color:#777;
+    margin-top:10px;
+}
+.offerBanner{
+    margin:80px auto;
+    width:90%;
+    background:#d23c5a8b;
+    color:white;
+    text-align:center;
+    border-radius:20px;
+    padding:60px 20px;
+}
+
+.offerBanner h2{
+    font-size:48px;
+}
+
+.offerBanner p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.launchHeading{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#222;
 }

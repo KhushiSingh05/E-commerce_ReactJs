@@ -1,90 +1,210 @@
 .contact-container {
-  padding: 40px;
   max-width: 1200px;
   margin: auto;
+  padding-bottom: 80px;
+  background: #f8fafc;
 }
+
+/* ================= HERO SECTION ================= */
+
+.contact-hero {
+  height: 350px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=1600");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  margin-bottom: 70px;
+}
+
+.contact-hero-content {
+  text-align: center;
+}
+
+.contact-hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.contact-hero-content p {
+  width: 700px;
+  max-width: 90%;
+  margin: auto;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* ================= CONTACT INFO ================= */
 
 .contact-top {
   display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 70px;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .contact-info {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .contact-subtitle {
-  font-size: 12px;
-  color: gray;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
+  color: #088178;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .contact-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.contact-info h4 {
+  margin-bottom: 20px;
+  font-size: 22px;
 }
 
 .contact-info p {
-  margin: 8px 0;
-  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
 }
+
+.contact-icon {
+  color: #088178;
+  font-size: 18px;
+}
+
+/* ================= MAP ================= */
 
 .contact-map {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+.contact-map iframe {
+  width: 100%;
+  height: 420px;
+  border: none;
+}
+
+/* ================= FORM ================= */
+
 .contact-form-section {
-  margin-top: 40px;
-  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .form-subtitle {
-  font-size: 12px;
-  color: gray;
-  margin-bottom: 5px;
+  color: #088178;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .form-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 35px;
+  color: #222;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  outline: none;
   width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 .contact-form textarea {
+  height: 180px;
   resize: none;
-  height: 120px;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #088178;
+  box-shadow: 0 0 12px rgba(8, 129, 120, 0.2);
+}
+
+/* ================= BUTTON ================= */
+
 .submit-btn {
-  background-color: #007f66;
+  background: #088178;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .submit-btn:hover {
-  background-color: #005f4d;
+  background: #066b64;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(8, 129, 120, 0.3);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .contact-hero {
+    height: 260px;
+  }
+
+  .contact-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .contact-hero-content p {
+    font-size: 16px;
+  }
+
+  .contact-top {
+    flex-direction: column;
+  }
+
+  .contact-form-section {
+    padding: 30px 20px;
+  }
+
+  .form-title {
+    font-size: 28px;
+  }
 }

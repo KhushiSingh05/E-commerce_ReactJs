@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ShopContext } from "../ShopContext/ShopContext";
 import { BiCart, BiUser } from 'react-icons/bi';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const { quantity } = useContext(ShopContext);
@@ -13,17 +13,47 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <h2>MyShop</h2>
         </Link>
-      </div>
+    </div>
 
-      <div className='link'>
-        <ul>
-          <li><Link to="/">HOME</Link></li>
-          <li><Link to="/products">PRODUCTS</Link></li>
-          <li><Link to="/contact">CONTACT</Link></li>
-          <li><Link to="/AppPage">APP</Link></li>
-           {/* If you want, can remove or repurpose */}
-        </ul>
-      </div>
+    <div className='link'>
+      <ul>
+        <li>
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        HOME
+      </NavLink>
+    </li>
+
+    <li>
+      <NavLink
+        to="/products"
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        PRODUCTS
+      </NavLink>
+    </li>
+
+    <li>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        CONTACT
+      </NavLink>
+    </li>
+
+    <li>
+      <NavLink
+        to="/AppPage"
+        className={({ isActive }) => (isActive ? "active-link" : "")}
+      >
+        APP
+      </NavLink>
+    </li>
+  </ul>
+</div>
 
       <div className='nav_icon_wrapper'>
         <Link to="/cart">

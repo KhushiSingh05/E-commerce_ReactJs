@@ -1,35 +1,53 @@
 .hero{
     display: flex;
-    padding-inline: 100px;
-    gap: 20px;
     justify-content: space-between;
+    align-items: center;
+
+    padding: 80px 100px;
+    min-height: 90vh;
+
+    background: linear-gradient(135deg,#FFF8F4,#FDEBDD,#FFF8F4);
 }
 .hero_left{
-    max-width: 50%;
-    margin-top: 120px;
+    flex: 1;
+    max-width: 600px;
 }
 .hero_left h2{
-    font-size: 60px;
+    font-size: 72px;
+    line-height: 1.1;
 }
 .hero_left p{
+    margin-top: 24px;
     font-size: 20px;
-    margin-top: 15px;
+    line-height: 1.8;
     color: #666;
 }
 .hero_left button{
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #f0c14b;
+    margin-top: 35px;
+    padding: 18px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    background: #D46A4C;
+    color: white;
     font-size: 18px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all .3s ease;
+}
+
+.hero_left button:hover{
+    transform: translateY(-3px);
+    background: #BC5A40;
 }
 .hero_right{
-    max-width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .hero_right img{
-    width: 640px;
-    height: 570px;
-    object-fit: contain;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
 }

@@ -1,12 +1,43 @@
-# React + Vite
+# 🛍️ E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce website built using **React.js** and **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🏠 Home Page
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/14d00c02-4c8b-434f-9b18-ded8481d302e" width="800">
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Product Page
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1643b672-7d1a-49d9-8d8a-ab238ae84974" width="800">
+</p>
+
+---
+
+## 👥 Contacts
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/46d5e9e0-1da8-4e20-ab6c-95213abd7885" width="800">
+</p>
+
+---
+
+## 📱 App Page
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b9439365-2915-41e6-937b-a40512f79084" width="800">
+</p>
+
+---
+
+## 🛒 Cart
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8b4e5b44-2d18-456b-a51b-18c9de3bfc0a" width="800">
+</p>
